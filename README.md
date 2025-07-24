@@ -42,31 +42,26 @@ The project aims to solve real-life housing discovery challenges by offering fea
 💻 Starting Commands
 
 🔹 Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/Prerna-Kujur/Pg-Finder.git
 
-cd Pg-Finder
+    git clone https://github.com/Prerna-Kujur/Pg-Finder.git
+
+    cd Pg-Finder
 
 🔹 Start Client (React Frontend)
-bash
-Copy
-Edit
 
-cd client
+    cd client
 
-npm install
+    npm install
 
-npm start
+    npm start
 
 🔹 Start Server (Express Backend)
-bash
-Copy
-Edit
 
-cd ../server
-npm install
-npm start
+    cd ../server
+
+    npm install
+
+    npm start
+
 Your app will now be running at http://localhost:3000.
 
