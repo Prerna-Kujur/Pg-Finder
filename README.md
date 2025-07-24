@@ -21,25 +21,23 @@ The project aims to solve real-life housing discovery challenges by offering fea
 
 📦 Client-side (/client)
 
-*ReactJS
+* ReactJS
 
-*Tailwind CSS
+* Tailwind CSS
 
-*HTML, CSS, JavaScript
+* HTML, CSS, JavaScript
 
-*Axios (for API calls)
+* Axios (for API calls)
 
 
 
 ⚙️ Server-side (/server)
 
-*Node.js
+* Node.js
 
-*Express.js
+* Express.js
 
-*MongoDB
-
-*Mongoose
+* MongoDB
 
 💻 Starting Commands
 
