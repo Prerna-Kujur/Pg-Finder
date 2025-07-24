@@ -55,7 +55,9 @@ Copy
 Edit
 
 cd client
+
 npm install
+
 npm start
 
 🔹 Start Server (Express Backend)
