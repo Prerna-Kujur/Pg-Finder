@@ -1,0 +1,82 @@
+/* ScheduleVisit.css */
+
+.schedule-visit-container {
+    margin: 48px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid darkcyan;
+  }
+  
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    color: darkcyan;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  input[type="date"],
+  input[type="time"],
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  .room-name-title{
+    text-decoration: underline;
+    display: inline;
+  }
+  
+  .schedule-visit-btn-container {
+    text-align: center;
+  }
+  .form-group-name {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .schedule-visit-btn {
+    padding: 10px 20px;
+    background-color: darkcyan;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  
+  /* Styling for form input elements on focus */
+  input[type="date"]:focus,
+  input[type="time"]:focus,
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: darkcyan;
+    box-shadow: 0px 0px 5px rgba(0, 139, 139, 0.7);
+  }
+  

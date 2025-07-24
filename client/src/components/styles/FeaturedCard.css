@@ -1,0 +1,75 @@
+/* FeaturedCard.css */
+
+.custom-featured-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid darkcyan;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  margin: 10px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: all 0.3s ease;
+  max-width: 300px;
+}
+
+.custom-image {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-image-style {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-info {
+  padding: 20px;
+}
+
+.custom-name {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+.custom-owner-name {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.custom-address {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.custom-price {
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.custom-rating {
+  font-weight: bold;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.custom-check-details-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-check-details-button:hover {
+  background-color: #2980b9;
+}

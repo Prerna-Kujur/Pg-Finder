@@ -1,0 +1,182 @@
+.search-layout {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  overflow: hidden; 
+}
+
+.search-layout-search-bar-container {
+  background-color: #f4f4f4; 
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid darkcyan; 
+}
+
+.search-layout-search-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid darkcyan; 
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.search-layout-main-content {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.search-layout-sidebar-container {
+  flex: 1;
+  background-color: lightblue;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 33.33%;
+  
+}
+
+.search-layout-sidebar-heading {
+  font-size:x-large;
+  color: darkcyan;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.search-layout-filter {
+  margin-bottom: 20px;
+}
+
+.search-layout-card-container {
+  flex: 2;
+  padding: 20px;
+  background-color: #f4f4f4; 
+  border: 1px solid darkcyan; 
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; 
+}
+
+
+.search-layout-filter select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid darkcyan; 
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  background-color: #f4f4f4; 
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.search-layout-filter select:focus {
+  border-color: darkcyan; 
+  background-color: #fff; 
+}
+
+.features-checkboxes label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.features-checkboxes input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+
+.features-checkboxes input[type="checkbox"]:checked + label {
+  font-weight: bold;
+  color: darkcyan; 
+}
+
+.search-layout-search-input-container {
+  flex: 1;
+  margin-right: 10px; 
+}
+
+.search-layout-search-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid darkcyan; 
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-layout-search-input:first-child {
+  border-color: darkcyan; 
+}
+
+.search-layout-search-input:last-child {
+  border-color: darkcyan;
+}
+
+.sorting-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sorting-label {
+  margin-right: 10px;
+  font-size: 18px;
+  color: darkcyan;
+}
+
+.sorting-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex; 
+  align-items: center;
+}
+
+.sorting-toggle i {
+  font-size: 24px;
+  color: darkcyan;
+  margin-right: 5px; 
+  transition: transform 0.3s;
+}
+
+.sorting-toggle span {
+  font-size: 16px; 
+  color: darkcyan;
+}
+
+.sorting-toggle:hover i {
+  transform: scale(1.2);
+}
+
+
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .search-layout-main-content {
+    flex-direction: column; /* Stack sidebar and card container vertically */
+  }
+
+  .search-layout-sidebar-container {
+    max-width: 100%; /* Expand to full width */
+    margin-bottom: 20px; /* Add some spacing between sidebar and card container */
+  }
+}
+
+/* Responsive styles for even smaller screens (e.g., mobile) */
+@media screen and (max-width: 480px) {
+  .search-layout-search-bar-container {
+    flex-direction: column; /* Stack search inputs vertically */
+    align-items: stretch; /* Stretch search inputs to full width */
+  }
+
+  .search-layout-search-input-container {
+    margin-right: 0; /* Remove margin between search inputs */
+    margin-bottom: 10px; /* Add spacing between search inputs */
+  }
+}

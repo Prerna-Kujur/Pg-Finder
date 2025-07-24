@@ -1,0 +1,152 @@
+.hero-section {
+  background-size: cover;
+  background-color: lightblue;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+  border-bottom: 2px solid darkcyan;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-search {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hero-search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px !important;
+  font-size: 16px;
+  margin-right: 10px;
+  outline: none;
+}
+
+.hero-search-button {
+  padding: 10px 20px;
+  background-color: darkcyan;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-search-button:hover {
+  background-color: #009999;
+}
+
+/* Responsive styles for screens less than 768px */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .hero-search-input {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Responsive styles for screens less than 480px */
+@media (max-width: 480px) {
+  .hero-search-input {
+    font-size: 14px;
+  }
+
+  .hero-search-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+
+
+/* .search {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px !important;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    background-color: darkcyan;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #009999;
+  }
+  
+  .hero {
+    background-size: cover;
+    background-color: lightblue;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    border-bottom: 2px solid darkcyan;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .search {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */

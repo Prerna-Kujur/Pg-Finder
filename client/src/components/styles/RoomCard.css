@@ -1,0 +1,403 @@
+/* Default styles for larger screens */
+.RoomCard {
+  position: relative;
+  display: flex;
+  border: 2px solid darkcyan;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  margin: 10px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: red;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.favorite-icon:hover {
+  color: #ff5252;
+  transform: scale(1.2);
+}
+
+.RoomCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.image {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKaddeXCd87fsKguk8xrVgWJPdvKfUoVHXb1seryyKHQ&s");
+  background-size: cover;
+  background-position: center;
+  width: 300px; /* Adjust the width to your desired rectangular shape */
+  height: 200px; /* Adjust the height to your desired rectangular shape */
+  border-radius: 10px;
+  margin-right: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  flex: 1;
+  text-align: left;
+}
+
+.name {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.room-card-bold-text {
+  font-weight: 800;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.rating-value {
+  font-weight: bold;
+  color: #f39c12;
+  margin-right: 5px;
+}
+
+.review-count {
+  color: #555;
+  margin-right: 5px;
+}
+
+.rating-text {
+  font-weight: bold;
+  color: #f39c12;
+  font-size: small;
+  border: 1px solid #f39c12;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Pricing Information */
+.room-price {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  color: #3498db;
+  margin-top: 10px;
+}
+
+.price-value {
+  font-size: 1.5rem;
+}
+
+.price-text {
+  margin-left: 5px;
+}
+
+/* Style for the icons */
+.features {
+  margin-top: 10px;
+}
+
+.features i {
+  font-size: 24px;
+  color: #f39c12;
+  margin-right: 10px;
+  border: 1px solid #f39c12;
+  padding: 5px;
+  border-radius: 9%;
+}
+
+/* Add styles for the buttons */
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.check-details-button,
+.book-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.check-details-button:hover,
+.book-button:hover {
+  background-color: #2980b9;
+}
+
+.book-button {
+  background-color: #27ae60;
+  margin: 10px;
+}
+
+.book-button:hover {
+  background-color: #219a52;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .RoomCard {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .image {
+    width: 200px; /* Adjust the image width for smaller screens */
+    height: 150px; /* Adjust the image height for smaller screens */
+    margin-right: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .info {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .name {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .features i {
+    font-size: 20px; /* Adjust icon size for smaller screens */
+  }
+}
+
+/* Responsive styles for even smaller screens (e.g., mobile) */
+@media screen and (max-width: 480px) {
+  .RoomCard {
+    flex-direction: column; /* Change flex direction for smaller screens */
+  }
+
+  .image {
+    width: 100%; /* Adjust image width for mobile screens */
+    height: auto; /* Allow image height to adjust for mobile screens */
+    margin-right: 0; /* Remove right margin for mobile screens */
+  }
+
+  .info {
+    margin-left: 0; /* Remove left margin for mobile screens */
+    margin-top: 10px; /* Add top margin for mobile screens */
+  }
+
+  .features {
+    margin-top: 10px; /* Adjust margin for mobile screens */
+    text-align: center; /* Center-align features for mobile screens */
+  }
+
+  .features i {
+    font-size: 20px; /* Adjust icon size for mobile screens */
+  }
+
+  .buttons {
+    margin-top: 20px; /* Adjust top margin for buttons on mobile screens */
+  }
+}
+
+
+/* .RoomCard::before {
+  content: "\2665";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: red; 
+  cursor: pointer; 
+  z-index: 2; 
+  transition: color 0.3s ease; 
+}
+
+.RoomCard:hover::before {
+  color: #ff5252;
+}
+
+.RoomCard {
+  position: relative;
+  display: flex;
+  border: 2px solid darkcyan;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  margin: 10px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: red;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.favorite-icon:hover {
+  color: #ff5252;
+  transform: scale(1.2);
+
+}
+
+.RoomCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.image {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKaddeXCd87fsKguk8xrVgWJPdvKfUoVHXb1seryyKHQ&s");
+  background-size: cover;
+  background-position: center;
+  width: 300px; 
+  height: 200px; 
+  border-radius: 10px;
+  margin-right: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  flex: 1;
+  text-align: left;
+}
+
+.name {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: darkcyan;
+  margin-bottom: 10px;
+  
+}
+
+p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.owner {
+  font-weight: bold;
+  color: #555;
+}
+
+.address {
+  font-style: italic;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #f39c12;
+}
+
+.rating-value {
+  font-weight: bold;
+  color: #f39c12;
+  margin-right: 5px;
+}
+
+.review-count {
+  color: #555;
+  margin-right: 5px;
+}
+.room-card-bold-text {
+  font-weight: 800;
+}
+.rating-text {
+  font-weight:bold;
+  color: #f39c12;
+  font-size:small;
+  border: 1px solid #f39c12;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.room-price {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  color: #3498db; 
+  margin-top: 10px; 
+}
+
+.price-value {
+  font-size: 1.5rem; 
+}
+
+.price-text {
+  margin-left: 5px; 
+}
+
+.features {
+  margin-top: 10px;
+}
+
+.features i {
+  font-size: 24px;
+  color: #f39c12;
+  margin-right: 10px;
+  border: 1px solid #f39c12;
+  padding: 5px;
+  border-radius: 9%;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.check-details-button,
+.book-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.check-details-button:hover,
+.book-button:hover {
+  background-color: #2980b9;
+}
+
+.book-button {
+  background-color: #27ae60;
+  margin: 10px;
+
+}
+
+.book-button:hover {
+  background-color: #219a52;
+} */

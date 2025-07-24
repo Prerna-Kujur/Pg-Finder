@@ -1,0 +1,96 @@
+.profile-container {
+  margin: 48px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid darkcyan;
+}
+.profile-title {
+  font-size: 24px;
+  text-align: center;
+  color: darkcyan;
+  margin-bottom: 20px;
+}
+.profile-details {
+  margin: 30px 0;
+}
+.profile-top {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.profile-header {
+  font-size: 20px;
+  font-weight: 700;
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+.profile-image-container {
+  text-align: center;
+}
+
+.profile-image {
+  width: 150px; /* Adjust the width and height as needed */
+  height: 150px;
+  border-radius: 50%; /* This creates a circular shape */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire circle */
+  margin: 0 auto 20px; /* Adjust margin as needed */
+  border: 2px solid darkcyan; /* Add a border around the circle */
+}
+
+.section-header {
+  font-size: 20px;
+  font-weight: 700;
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+.profile-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.field-label {
+  flex: 1;
+  font-weight: 600;
+  color: #333;
+  margin-right: 10px;
+}
+
+.field-value {
+  flex: 2;
+  color: #666;
+  border: 1px solid #ccc; /* Add a 1px solid gray border */
+  padding: 8px; /* Add some padding for spacing */
+  border-radius: 4px; /* Add rounded corners to the border */
+  min-height: 40px; /* Set a minimum height for the field values */
+}
+
+.field-value:hover {
+  border-color: #999; /* Darken the border color on hover */
+}
+
+/* Style for the Logout button */
+.logout-button {
+  text-align: center;
+  margin-top: 20px; /* Add spacing above the button */
+}
+
+.logout-button button {
+  padding: 10px 20px;
+  background-color: #f44336; /* Red color, you can change this to your preferred color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.logout-button button:hover {
+  background-color: #d32f2f; /* Darker red color on hover */
+}

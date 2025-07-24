@@ -1,0 +1,140 @@
+/* Original styles */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 12px 48px;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 2px solid darkcyan;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+  flex: 1;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 32px;
+  color: darkcyan;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  z-index: 2;
+  text-decoration: none;
+  color: #333;
+  margin: 12px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: darkcyan;
+}
+
+.nav-cta {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-cta a {
+  color: #fff;
+  text-decoration: none;
+  margin: 8px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: darkcyan;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-cta a:hover {
+  background-color: #009999;
+}
+
+/* Media query for responsive design */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    display: none; /* Hide by default on small screens */
+  }
+
+  .nav-links.show-mobile-menu {
+    display: flex; /* Show when show-mobile-menu class is applied */
+  }
+
+  .nav-links a {
+    margin: 8px 0;
+    color: #333; /* Set text color for other links in mobile menu */
+  }
+
+  .nav-cta {
+    margin-top: 20px;
+  }
+
+  .mobile-menu-icon {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 12px; /* Adjust the top position as needed */
+    right: 12px; /* Adjust the right position as needed */
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333; /* Set bar color for the hamburger icon */
+    margin: 5px auto;
+    transition: transform 0.2s ease;
+  }
+
+  .show-mobile-menu .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .show-mobile-menu .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .show-mobile-menu .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Style for Login, Register, and Profile links */
+  .nav-cta a {
+    color: #fff;
+    text-decoration: none;
+    margin: 8px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: darkcyan;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-cta a:hover {
+    background-color: #009999;
+  }
+}

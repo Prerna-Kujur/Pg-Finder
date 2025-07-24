@@ -1,0 +1,48 @@
+/* Add this CSS to your stylesheet or component */
+.your-rooms-container {
+  width: 67vw; /* 2/3 of the horizontal width */
+  display: flex;
+margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.your-rooms-main-container {
+
+    max-width: 80%;
+    margin: 50px auto; /* Center horizontally */
+  border: 2px solid darkcyan; /* Border color */
+  padding: 20px; /* Add padding as needed */
+}
+
+.your-rooms-content {
+  width: 100%; /* Make sure content stretches within the container */
+}
+.your-rooms-header {
+    text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+.text-centered {
+  text-align: center;
+  color: red;
+}
+
+
+
+.delete-button {
+  background-color: #ff5733; /* Choose a suitable background color */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.delete-button:hover {
+  background-color: #ff0000; /* Change color on hover if desired */
+}

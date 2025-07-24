@@ -1,0 +1,19 @@
+/* PopulateFeatured.css */
+
+.populate-featured-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column width as needed */
+    gap: 20px; /* Adjust the gap between cards as needed */
+    margin: 20px;
+  }
+  
+  /* Optionally, you can add additional styles to the container if needed */
+  
+  .populate-featured-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  

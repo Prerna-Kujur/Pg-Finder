@@ -1,0 +1,208 @@
+/* AddRoom.css */
+.add-room-container {
+  margin: 48px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid darkcyan;
+}
+
+.add-room-header {
+  font-size: 24px;
+  text-align: center;
+  color: darkcyan;
+  margin-bottom: 20px;
+}
+
+.add-room-form {
+  margin: 30px 0;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 40px;
+}
+
+.add-room-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: darkcyan;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-room-button:hover {
+  background-color: #008080;
+}
+
+/* Styles for the "Is Available" checkbox */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 8px;
+  /* Customize checkbox appearance (optional) */
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid darkcyan;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"]:checked {
+  background-color: darkcyan;
+  border: 2px solid darkcyan;
+}
+
+.checkbox-label input[type="checkbox"]:checked::after {
+  content: "\2714"; /* Unicode checkmark symbol */
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 1px;
+  left: 5px;
+}
+
+
+/* AddRoom.css */
+
+/* ... (existing CSS rules) */
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 40px;
+}
+
+/* Style for the thumbnail image upload box */
+.thumbnail-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thumbnail-upload input[type="file"] {
+  margin: 10px 0;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for the thumbnail preview */
+.thumbnail-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.thumbnail-preview img {
+  max-width: 100px;
+  max-height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
+.features-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.features-checkbox input[type="checkbox"] {
+  margin-right: 8px;
+  /* Customize checkbox appearance (optional) */
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid darkcyan;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.features-checkbox input[type="checkbox"]:checked {
+  background-color: darkcyan;
+  border: 2px solid darkcyan;
+}
+
+.features-checkbox input[type="checkbox"]:checked::after {
+  content: "\2714"; /* Unicode checkmark symbol */
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 1px;
+  left: 5px;
+}
+
+/* Style for the feature labels */
+.features-checkbox label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: darkcyan;
+}
+
+.features-checkbox label .feature-icon {
+  margin-right: 8px;
+  font-size: 18px;
+  color: darkcyan;
+}
+
+/* Apply styles to the features checkboxes */
+.form-section .features-checkbox label input[type="checkbox"] {
+  display: none; /* Hide the actual checkboxes */
+}
+
+/* Styles for the feature labels (optional) */
+.form-section .features-checkbox label:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+

@@ -1,0 +1,445 @@
+/* Global styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  border: 2px solid darkcyan;
+  max-width: 80%;
+}
+
+/* Header styles */
+.center-header-image {
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Add this line to hide overflowing content */
+}
+.header-image {
+  border: 2px solid darkcyan;
+  padding: 10px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+}
+
+.room-details {
+  text-align: left;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.room-info {
+  text-align: left;
+  flex: 1;
+  padding: 20px;
+}
+
+.room-name {
+  font-size: 28px;
+  color: darkcyan;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.owner-style {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.availability-style {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Adjust font sizes for smaller screens */
+@media screen and (max-width: 768px) {
+  .room-name {
+    font-size: 24px;
+  }
+  .owner-style,
+  .availability-style {
+    font-size: 16px;
+  }
+}
+
+/* Rating styles */
+.rating-style {
+  font-size: 20px;
+  color: #f2c94c;
+  margin-top: 10px;
+}
+
+.people-rated-style {
+  font-size: 16px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.book-now-button,
+.shedule-now-button {
+  flex: 1;
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.book-now-button {
+  background-color: #008b8b;
+  color: #fff;
+}
+
+.shedule-now-button {
+  background-color: darkcyan;
+  color: #fff;
+}
+
+/* Details and Description styles */
+.left-content {
+  text-align: left;
+  margin-top: 20px;
+  flex: 1;
+  padding: 20px;
+}
+
+.details-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: darkcyan;
+  margin-bottom: 5px;
+}
+
+.details-text {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.details-style {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.features-amenities-style {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.room-description-style {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.description-title-style {
+  font-size: 24px;
+  font-weight: bold;
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+.room-description-style p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* Photos styles */
+.photos-style {
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.photos-style h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: darkcyan;
+  margin-bottom: 20px;
+}
+
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo-style {
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.photo-style img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.delete-room-button {
+  background-color: #ff6347; /* Red color for delete button */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.delete-room-button:hover {
+  background-color: #d9534f; /* Darker red on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styles/RoomDetails.css */
+
+/* Global styles */
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  border: 2px solid darkcyan;
+  max-width: 80%;
+
+}
+
+.center-header-image {
+  display: flex;
+  justify-content: center;
+}
+.header-image {
+  border: 2px solid darkcyan;
+  padding: 10px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.room-details {
+  text-align: left;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.room-info {
+  text-align: left;
+}
+
+.room-name {
+  font-size: 28px;
+  color: darkcyan;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.owner-style {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.availability-style {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 10px;
+}
+.room-details-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+.rating-style {
+  font-size: 20px;
+  color: #f2c94c;
+  margin-top: 10px;
+}
+
+.people-rated-style {
+  font-size: 16px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.book-now-button {
+  background-color: #008b8b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+.shedule-now-button {
+  background-color: darkcyan;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px;
+}
+
+.book-now-button:hover {
+  background-color: #005757;
+}
+
+.left-content {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.details-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: darkcyan;
+  margin-bottom: 5px;
+}
+
+.details-text {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.details-style {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 5px;
+}
+.center-content {
+  min-width: 100%;
+}
+.features-amenities-style {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.room-description-style {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.description-title-style {
+  font-size: 24px;
+  font-weight: bold;
+  color: darkcyan;
+  margin-bottom: 10px;
+}
+
+.room-description-style p {
+  font-size: 18px;
+  color: #444;
+}
+
+.photos-style {
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.photos-style h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: darkcyan;
+  margin-bottom: 20px;
+}
+
+.photo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo-style {
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.photo-style img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.delete-room-button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.delete-room-button:hover {
+  background-color: #d9534f;
+} */
