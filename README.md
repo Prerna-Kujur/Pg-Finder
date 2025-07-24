@@ -2,7 +2,7 @@ PG Finder is a full-stack web application designed to help users search and list
 
 The project aims to solve real-life housing discovery challenges by offering features like filtered search, image uploads, contact details, and secure authentication. It is built using the MERN stack and follows modern frontend practices for a clean, responsive, and user-friendly interface.
 
-🌟 Key Highlights
+**Key Highlights**
 
 🔍 Search PGs by city, price, and amenities
 
@@ -17,38 +17,39 @@ The project aims to solve real-life housing discovery challenges by offering fea
 🧾 Secure backend API using Express and MongoDB
 
 
-🛠️ Technologies Used
+**Technologies Used**
 
 📦 Client-side (/client)
 
-# ReactJS
+*ReactJS
 
-# Tailwind CSS
+*Tailwind CSS
 
-HTML, CSS, JavaScript
+*HTML, CSS, JavaScript
 
-Axios (for API calls)
+*Axios (for API calls)
 
-Firebase Authentication (Login/Signup)
+
 
 ⚙️ Server-side (/server)
-Node.js
 
-Express.js
+*Node.js
 
-MongoDB
+*Express.js
 
-Mongoose
+*MongoDB
 
-CORS & dotenv for configuration
+*Mongoose
 
 💻 Starting Commands
+
 🔹 Clone the Repository
 bash
 Copy
 Edit
 git clone https://github.com/Prerna-Kujur/Pg-Finder.git
 cd Pg-Finder
+
 🔹 Start Client (React Frontend)
 bash
 Copy
@@ -56,6 +57,7 @@ Edit
 cd client
 npm install
 npm start
+
 🔹 Start Server (Express Backend)
 bash
 Copy
