@@ -46,12 +46,14 @@ bash
 Copy
 Edit
 git clone https://github.com/Prerna-Kujur/Pg-Finder.git
+
 cd Pg-Finder
 
 🔹 Start Client (React Frontend)
 bash
 Copy
 Edit
+
 cd client
 npm install
 npm start
@@ -60,6 +62,7 @@ npm start
 bash
 Copy
 Edit
+
 cd ../server
 npm install
 npm start
