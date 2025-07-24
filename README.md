@@ -3,6 +3,7 @@ PG Finder is a full-stack web application designed to help users search and list
 The project aims to solve real-life housing discovery challenges by offering features like filtered search, image uploads, contact details, and secure authentication. It is built using the MERN stack and follows modern frontend practices for a clean, responsive, and user-friendly interface.
 
 🌟 Key Highlights
+
 🔍 Search PGs by city, price, and amenities
 
 🖼️ Upload and view images of PG rooms
@@ -17,10 +18,12 @@ The project aims to solve real-life housing discovery challenges by offering fea
 
 
 🛠️ Technologies Used
-📦 Client-side (/client)
-ReactJS
 
-Tailwind CSS
+📦 Client-side (/client)
+
+# ReactJS
+
+# Tailwind CSS
 
 HTML, CSS, JavaScript
 
